@@ -1,14 +1,11 @@
 pragma solidity ^0.6.0; 
 
-
+// declare abstract contract
 abstract contract Calculator {
-    
-    constructor() public{
-        
-    }
     function getResult() public virtual view returns(uint);
 }
 
+// is-a relationship
 contract Test is Calculator {
    function getResult() override public view returns(uint) {
       uint a = 1;
