@@ -1,10 +1,42 @@
 # Access modifier
 
-**public** : Anyone can access .
-**external** : Cannot be accessed internally .
-**internal** : only the contract and contracts deriving from it can access.
-**private** : can be access only from this contracts.
+**public** : Anyone can access .\
+**external** : Cannot be accessed internally .\
+**internal** : only the contract and contracts deriving from it can access.\
+**private** : can be access only from this contracts.\
 
+
+
+
+# Functions
+
+## view
+>> This declares that no state will be changed. In other words the function is simply returning state 
+>> (sampleNumber), but not making any changes to the data currently on the blockchain.
+
+```
+function get() public view returns(uint256){
+        return storeData;
+    }
+```
+
+## pure
+>> Declares that no state variable will be changed or read. This is an even more stringent declaration >> we are not even reading any data outside of the function itself. Had we attempted to return the 
+>> variable sampleNumber within a function declare pure the contract would have failed to compile.
+
+```
+ function sumeStore(uint n) public pure returns(uint){
+        uint sum = 0;
+        for(uint i = 1; i<=n;i++){
+            sum+=i;
+            if( i == 3){
+                continue;
+            }
+        }
+        return sum;
+    }
+
+```
 
 
 # Abstract contract:
@@ -35,3 +67,4 @@
 > 3. They cannot declare a constractor.
 
 > 4. The cannot declare state variables.
+
