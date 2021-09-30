@@ -1,32 +1,37 @@
-// public -> Anyone can access .
-// external -> Cannot be accessed internally .
-// internal -> only the contract and contracts deriving from it can access.
-// private -> can be access only from this contracts.
+# Access modifier
+
+**public** : Anyone can access .
+**external** : Cannot be accessed internally .
+**internal** : only the contract and contracts deriving from it can access.
+**private** : can be access only from this contracts.
 
 
 
-// abstract contract are contracts that have partial function defination.
+# Abstract contract:
 
-// You Cannot create an instance of an abstract contract.
+> 1. abstract contract are contracts that have partial function defination.
 
-// An abstract contract must be inheritent by child contract for utilizing is function.
+> 2. You Cannot create an instance of an abstract contract.
 
-// Thi function singatures terminator using the semicolon,;,character.
+> 3. An abstract contract must be inheritent by child contract for utilizing is function.
 
-// There is no solidity provided keyword to mark a contract as abstract.
+> 4. Thi function singatures terminator using the semicolon,;,character.
 
-// A contract becomes an abstract class if it has functions withour implementation.
+> 5. There is no solidity provided keyword to mark a contract as abstract.
+
+> 6. A contract becomes an abstract class if it has functions withour implementation.
 
 
+# Interface contract attributes:
 
-// Pure abstracts are similar to interfaces;
+**Pure abstracts are similar to interfaces**
 
-Restriction of interfaces classes:
+### Restriction of interfaces classes:
 
-// They cannot inherit other contracts or interface.
+> 1. They cannot inherit other contracts or interface.
 
-// All declared funtions must be external.
+> 2. All declared funtions must be external.
 
-// They cannot declare a constractor.
+> 3. They cannot declare a constractor.
 
-// The cannot declare state variables.
+> 4. The cannot declare state variables.
